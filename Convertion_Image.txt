@@ -1,0 +1,25 @@
+
+
+bufImg --> graphics {new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB)}
+
+graphics --> imgIcon {}
+
+imgIcon --> image {imgIcon.getImage()}
+
+
+path --> img {getToolkit().getImage("path")}
+path --> imgIcon {new imageIcon("path")}
+
+
+
+Ce que je vais devoir faire
+
+
+
+bufImg    -->   graphics
+                   ||
+                   \/
+path   --> imgIcon --> affichage
+		  
+
+
